@@ -23,14 +23,14 @@ function Gallery_Img_Lightbox_Gallery(id) {
                 columnWidth: _this.defaultBlockWidth + 10 + param_obj.gallery_img_ht_view6_border_width * 2,
             },
             masonryHorizontal: {
-                rowHeight: 300 + 20
+                rowHeight: 200 + 20
             },
             cellsByRow: {
-                columnWidth: 300 + 20,
+                columnWidth: 200 + 20,
                 rowHeight: 'auto'
             },
             cellsByColumn: {
-                columnWidth: 300 + 20,
+                columnWidth: 200 + 20,
                 rowHeight: 'auto'
             },
             getSortData: {
@@ -151,14 +151,14 @@ function Gallery_Img_Lightbox_Gallery(id) {
                                     columnWidth: _this.defaultBlockWidth + 10 + param_obj.gallery_img_ht_view6_border_width * 2,
                                 },
                                 masonryHorizontal: {
-                                    rowHeight: 300 + 20 + +param_obj.gallery_img_ht_view6_border_width * 2
+                                    rowHeight: 200 + 20 + +param_obj.gallery_img_ht_view6_border_width * 2
                                 },
                                 cellsByRow: {
-                                    columnWidth: 300 + 20,
+                                    columnWidth: 200 + 20,
                                     rowHeight: 'auto'
                                 },
                                 cellsByColumn: {
-                                    columnWidth: 300 + 20,
+                                    columnWidth: 200 + 20,
                                     rowHeight: 'auto'
                                 },
                                 getSortData: {

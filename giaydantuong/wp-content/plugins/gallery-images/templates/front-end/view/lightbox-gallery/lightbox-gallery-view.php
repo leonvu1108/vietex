@@ -137,8 +137,8 @@ switch ($gallery[0]->hover_effect) {
                         <?php if ($like_dislike != 'off'): ?>
                             <div class="huge_it_gallery_like_cont_<?php echo $galleryID . $pID; ?>">
                                 <div class="huge_it_gallery_like_wrapper">
-						<span class="huge_it_like">
-							<?php if ($like_dislike == 'heart'): ?>
+                        <span class="huge_it_like">
+                            <?php if ($like_dislike == 'heart'): ?>
                                 <i class="hugeiticons-heart likeheart"></i>
                             <?php endif; ?>
                             <?php if ($like_dislike == 'dislike'): ?>
@@ -152,22 +152,22 @@ switch ($gallery[0]->hover_effect) {
                                   } else {
                                       echo 'unliked';
                                   } ?>">
-							<?php if ($like_dislike == 'heart'): ?>
+                            <?php if ($like_dislike == 'heart'): ?>
                                 <?php echo $row->like; ?>
                             <?php endif; ?>
-							</span>
-							<span
+                            </span>
+                            <span
                                     class="huge_it_like_count <?php if ($gallery_default_params['gallery_img_ht_lightbox_rating_count'] == 'off') {
                                         echo 'huge_it_hide';
                                     } ?>"
                                     id="<?php echo $row->id ?>"><?php if ($like_dislike != 'heart'): ?><?php echo $row->like; ?><?php endif; ?></span>
-						</span>
+                        </span>
                                 </div>
                                 <?php if ($like_dislike != 'heart'): ?>
                                     <div class="huge_it_gallery_dislike_wrapper">
-						<span class="huge_it_dislike">
-							<i class="hugeiticons-thumbs-down dislike_thumb_down"></i>
-							<span class="huge_it_dislike_thumb" id="<?php echo $row->id ?>"
+                        <span class="huge_it_dislike">
+                            <i class="hugeiticons-thumbs-down dislike_thumb_down"></i>
+                            <span class="huge_it_dislike_thumb" id="<?php echo $row->id ?>"
                                   data-status="<?php if (isset($res3->image_status) && $res3->image_status == 'disliked') {
                                       echo $res3->image_status;
                                   } elseif (isset($res5->image_status) && $res5->image_status == 'disliked') {
@@ -175,13 +175,13 @@ switch ($gallery[0]->hover_effect) {
                                   } else {
                                       echo 'unliked';
                                   } ?>">
-							</span>
-							<span
+                            </span>
+                            <span
                                     class="huge_it_dislike_count <?php if ($gallery_default_params['gallery_img_ht_lightbox_rating_count'] == 'off') {
                                         echo 'huge_it_hide';
                                     } ?>"
                                     id="<?php echo $row->id ?>"><?php echo $row->dislike; ?></span>
-						</span>
+                        </span>
                                     </div>
                                 <?php endif; ?>
                             </div>
